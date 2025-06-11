@@ -27,6 +27,7 @@ nav {
   z-index: 1000;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   max-width: 98%;
+  
 }
 
 
@@ -96,3 +97,23 @@ footer {
 }
 
 
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: nowrap; /* test */
+  }
+
+  nav ul {
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+  }
+
+  nav ul li {
+    white-space: nowrap;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;   
+    padding: 4px 8px;     
+  }
+}
