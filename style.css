@@ -8,27 +8,25 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-}
-
-header {
-  background-color: #f8f8f8;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: #f9f9f9;
 }
 
 nav {
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   background: #222;
-  padding: 10px;
+  border-radius: 16px;
+  padding: 12px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
 }
+
 
 nav ul {
   list-style: none;
@@ -42,12 +40,43 @@ nav ul li a {
   padding: 5px 10px;
 }
 
-select {
-  margin-left: 20px;
+#langSwitcher {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+header {
+  height: 100vh;
+  background: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #555;
 }
 
 section {
-  padding: 100px 20px;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 footer {
