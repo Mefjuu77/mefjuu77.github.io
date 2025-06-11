@@ -49,15 +49,16 @@ nav ul li a {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   background: #e0e0e0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  align-items: center;
 }
+
 
 .intro h1 {
   font-size: 3rem;
@@ -88,3 +89,5 @@ footer {
   text-align: center;
   padding: 30px;
 }
+
+
