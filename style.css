@@ -131,6 +131,26 @@ footer {
   justify-content: center;
 }
 
+.lang-flags {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.lang-flags img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  border-radius: 4px;
+}
+
+.lang-flags img.active,
+.lang-flags img:hover {
+  opacity: 1;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
 
 
 @media (max-width: 768px) {
@@ -154,12 +174,12 @@ footer {
   }
 
   nav ul li a {
-    font-size: 0.65rem;
+    font-size: 0.85rem;
     padding: 4px 8px;
   }
 
   #langSwitcher {
-    font-size: 0.65rem;
+    font-size: 0.85rem;
   }
 }
 

@@ -1,71 +1,73 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" ng-app="myApp">
 <head>
   <meta charset="UTF-8">
   <title>Mateusz Struszczyk</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="app.js"></script>
 </head>
-<body>
+<body ng-controller="MainCtrl">
 
   <header>
     <nav>
       <ul>
-        <li><a href="#about">O mnie</a></li>
-        <li><a href="#education">Wykształcenie</a></li>
-        <li><a href="#expirience">Doświadczenie</a></li>
-        <li><a href="#skills">Umiejętności</a></li>
-        <li><a href="#contact">Kontakt</a></li>
+        <li><a href="#about">{{ t.aboutTitle }}</a></li>
+        <li><a href="#education">{{ t.educationTitle }}</a></li>
+        <li><a href="#expirience">{{ t.experienceTitle }}</a></li>
+        <li><a href="#skills">{{ t.skillsTitle }}</a></li>
+        <li><a href="#contact">{{ t.contactTitle }}</a></li>
       </ul>
-      <select id="langSwitcher">
-        <option value="pl">PL</option>
-        <option value="en">EN</option>
-      </select>
+      <div class="lang-flags">
+      <img src="pl.png" alt="PL" ng-click="setLang('pl')" ng-class="{active: lang === 'pl'}">
+      <img src="gb.png" alt="EN" ng-click="setLang('en')" ng-class="{active: lang === 'en'}">
+      </div>
+
     </nav>
     <div class="intro">
       <h1>Mateusz Struszczyk</h1>
       <div class="photo">
-        <img src="zdj.jpg" alt="Zdjęcie ">
+        <img src="zdj.jpg" alt="Zdjęcie">
       </div>
     </div>
   </header>
 
   <section id="about">
-    <h2>O mnie</h2>
-    <p> Cześć! Jestem Mateusz, interesuję się Ekonomią, Motorsportem oraz rynkiem krypto. W wolnym czasie lubię zagrać w grę komputerową lub wybrać się na rower. Jestem otwarty na nowe wyzwania i nowe znajomości!  </p>
+    <h2>{{ t.aboutTitle }}</h2>
+    <p>{{ t.aboutText }}</p>
   </section>
 
   <section id="education">
-    <h2>Wykształcenie</h2>
-    <p>2019 - 2022: Liceum Ogólnokształące im. Marii Dąbrowskiej w Komorowie</p>
-    <p>2022 - Obecnie: Szkoła Głowna Gospodarstwa Wiejskiego w Warszawie - studia inżynierskie - Informatyka</p>
+    <h2>{{ t.educationTitle }}</h2>
+    <p>{{ t.education1 }}</p>
+    <p>{{ t.education2 }}</p>
   </section>
 
   <section id="expirience">
-    <h2>Doświadczenie</h2>
-    <p>Posiadam 4-letnie doświadczenie w branży e-commerce, obejmujące analizę danych, rozwój procesów sprzedażowych online oraz optymalizację operacji handlu elektronicznego. </p>
+    <h2>{{ t.experienceTitle }}</h2>
+    <p>{{ t.experienceText }}</p>
   </section>
 
-   <section id="skills">
-    <h2>Umiejętności</h2>
+  <section id="skills">
+    <h2>{{ t.skillsTitle }}</h2>
     <ul>
-      <li>Programowanie: C#, Python - podstawy</li>
-      <li>Technlogie webowe: HTML, CSS, JavaScript</li>
-      <li>Obsługa pakietu MS Office, Git, Jira</li>
-      <li>Języki: Angielski - B2, Polski - ojczysty </li>
-      <li>Elastyczność, Praca zespołowa, Komunikatywność</li>
+      <li>{{ t.skill1 }}</li>
+      <li>{{ t.skill2 }}</li>
+      <li>{{ t.skill3 }}</li>
+      <li>{{ t.skill4 }}</li>
+      <li>{{ t.skill5 }}</li>
     </ul>
   </section>
 
   <section id="contact">
-    <h2>Kontakt</h2>
-    <p>📧 <a href="mail">mateusz.struszczyk@gmail.com</a></p>
+    <h2>{{ t.contactTitle }}</h2>
+    <p>📧 <a href="mailto:mateusz.struszczyk@gmail.com">mateusz.struszczyk@gmail.com</a></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Mateusz Struszczyk</p>
   </footer>
-</div>
 
 </body>
 </html>
