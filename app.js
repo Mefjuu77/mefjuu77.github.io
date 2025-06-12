@@ -9,7 +9,7 @@ app.controller('MainCtrl', function($scope) {
       aboutText: "Cześć! Jestem Mateusz, interesuję się Ekonomią, Motorsportem oraz rynkiem krypto. W wolnym czasie lubię grać w gry komputerowe lub jeździć na rowerze. Jestem otwarty na nowe wyzwania i nowe znajomości!",
       educationTitle: "Wykształcenie",
       education2: "2019 - 2022: Liceum Ogólnokształcące im. Marii Dąbrowskiej w Komorowie",
-      education1: "2022 - Aktualnie: SGGW w Warszawie – Informatyka (3 rok studiów inżynierskich)",
+      education1: "2022 - Aktualnie: SGGW w Warszawie – kierunek Informatyka (3 rok studiów inżynierskich)",
       experienceTitle: "Doświadczenie",
       experienceText: "Posiadam 4-letnie doświadczenie w branży e-commerce, obejmujące analizę danych, rozwój procesów sprzedażowych online oraz optymalizację operacji handlu elektronicznego.",
       skillsTitle: "Umiejętności",
