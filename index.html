@@ -66,8 +66,11 @@
   </section>
 
   <div class="cookie-popup" ng-show="showCookiePopup">
-  <p>Ta strona korzysta z plików cookies w celu zapewnienia najlepszej jakości korzystania ze strony.</p>
-  <button ng-click="acceptCookies()">Akceptuję</button>
+  <p>{{t.cookieText}}</p>
+  <div class="cookie-buttons">
+    <button ng-click="acceptCookies()" class="cookie-btn">{{t.acceptCookies}}</button>
+    <button ng-click="rejectCookies()" class="cookie-btn cookie-reject-btn">{{t.rejectCookies}}</button>
+  </div>
 </div>
 
   <footer>

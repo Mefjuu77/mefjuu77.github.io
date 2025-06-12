@@ -166,25 +166,52 @@ footer {
   font-size: 0.95rem;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
   flex-wrap: wrap;
+  gap: 16px; 
 }
 
 .cookie-popup p {
   margin: 0;
+  flex-grow: 1; 
 }
 
-.cookie-popup a {
-  color: #00bcd4;
-  text-decoration: underline;
+.cookie-buttons {
+  display: flex;
+  gap: 12px; 
+  flex-shrink: 0; 
 }
 
-.cookie-popup button {
+.cookie-btn { 
   background-color: #00bcd4;
   color: white;
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
   cursor: pointer;
-  margin-top: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cookie-btn:hover {
+    background-color: #0097a7;
+}
+
+.cookie-reject-btn {
+  background-color: #5a6e82;
+}
+
+.cookie-reject-btn:hover {
+  background-color: #495a6d;
+}
+
+
+@media (max-width: 600px) {
+  .cookie-popup {
+    flex-direction: column; 
+    text-align: center;
+  }
+  .cookie-buttons {
+    width: 100%;
+    justify-content: center; 
+  }
 }
 
 @media (min-width: 600px) {
