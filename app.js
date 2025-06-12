@@ -56,4 +56,13 @@ app.controller('MainCtrl', function($scope) {
     $scope.lang = code;
     $scope.changeLang();
   };
+ 
+$scope.showCookiePopup = !localStorage.getItem('cookiesAccepted');
+
+
+$scope.acceptCookies = function () {
+  localStorage.setItem('cookiesAccepted', true);
+  $scope.showCookiePopup = false;
+};
+
 });
