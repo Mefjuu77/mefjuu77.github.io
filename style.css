@@ -114,17 +114,32 @@ footer {
 
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
   }
 
   nav ul {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 8px;
   }
 
-  .intro h1 {
-    font-size: 2rem;
+  nav ul li {
+    white-space: nowrap;
+  }
+
+  nav ul li a {
+    font-size: 0.85rem;
+    padding: 4px 8px;
+  }
+
+  #langSwitcher {
+    font-size: 0.85rem;
   }
 }
+
 
