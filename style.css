@@ -151,6 +151,24 @@ footer {
   opacity: 1;
   box-shadow: 0 0 4px rgba(0,0,0,0.2);
 }
+.social-icons {
+  margin-top: 25px; 
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.social-icons a {
+  color: #333; 
+  font-size: 2.5rem; 
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00bcd4; 
+  transform: scale(1.1);
+}
 .cookie-popup {
   position: fixed;
   bottom: 0;
@@ -205,21 +223,18 @@ footer {
 
 @media (max-width: 600px) {
   .cookie-popup {
-    flex-direction: column; /* Układ kolumnowy na małych ekranach */
+    flex-direction: column; 
     text-align: center;
   }
 
-  /* --- DODAJ TĘ REGUŁĘ ---
-    Resetuje właściwość flex-grow, która powodowała problem w układzie pionowym.
-    Teraz paragraf będzie miał naturalną wysokość, dopasowaną do tekstu.
-  */
+
   .cookie-popup p {
     flex-grow: 0;
   }
 
   .cookie-buttons {
     width: 100%;
-    justify-content: center; /* Wyśrodkowanie przycisków */
+    justify-content: center; 
   }
 }
 

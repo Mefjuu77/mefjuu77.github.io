@@ -37,7 +37,6 @@ app.controller('MainCtrl', function($scope) {
       skill3: "Tools: MS Office, Git, Jira",
       skill4: "Languages: English – B2, Polish – native",
       skill5: "Adaptability, teamwork, communication",
-      contactTitle: "Contact",
       cookieText: "This website uses cookies to ensure you get the best experience on our website.",
       acceptCookies: "Accept",
       rejectCookies: "Reject"
