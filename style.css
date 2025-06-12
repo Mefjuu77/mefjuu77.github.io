@@ -205,12 +205,21 @@ footer {
 
 @media (max-width: 600px) {
   .cookie-popup {
-    flex-direction: column; 
+    flex-direction: column; /* Układ kolumnowy na małych ekranach */
     text-align: center;
   }
+
+  /* --- DODAJ TĘ REGUŁĘ ---
+    Resetuje właściwość flex-grow, która powodowała problem w układzie pionowym.
+    Teraz paragraf będzie miał naturalną wysokość, dopasowaną do tekstu.
+  */
+  .cookie-popup p {
+    flex-grow: 0;
+  }
+
   .cookie-buttons {
     width: 100%;
-    justify-content: center; 
+    justify-content: center; /* Wyśrodkowanie przycisków */
   }
 }
 
