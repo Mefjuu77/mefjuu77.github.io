@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" ng-app="myApp">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <title>Mateusz Struszczyk</title>
@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="app.js"></script>
 </head>
-<body ng-controller="MainCtrl">
+<body data-ng-controller="MainCtrl" data-ng-app="myApp">
 
   <header>
     <nav>
@@ -20,8 +20,8 @@
         <li><a href="#skills">{{ t.skillsTitle }}</a></li>
       </ul>
       <div class="lang-flags">
-      <img src="pl.png" alt="PL" ng-click="setLang('pl')" ng-class="{active: lang === 'pl'}">
-      <img src="gb.png" alt="EN" ng-click="setLang('en')" ng-class="{active: lang === 'en'}">
+      <img src="pl.png" alt="PL" data-ng-click="setLang('pl')" data-ng-class="{active: lang === 'pl'}">
+      <img src="gb.png" alt="EN" data-ng-click="setLang('en')" data-ng-class="{active: lang === 'en'}">
       </div>
 
     </nav>
@@ -66,11 +66,11 @@
     </ul>
   </section>
 
-  <div class="cookie-popup" ng-show="showCookiePopup">
+  <div class="cookie-popup" data-ng-show="showCookiePopup">
   <p>{{t.cookieText}}</p>
   <div class="cookie-buttons">
-    <button ng-click="acceptCookies()" class="cookie-btn">{{t.acceptCookies}}</button>
-    <button ng-click="rejectCookies()" class="cookie-btn cookie-reject-btn">{{t.rejectCookies}}</button>
+    <button data-ng-click="acceptCookies()" class="cookie-btn">{{t.acceptCookies}}</button>
+    <button data-ng-click="rejectCookies()" class="cookie-btn cookie-reject-btn">{{t.rejectCookies}}</button>
   </div>
 </div>
 
