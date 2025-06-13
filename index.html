@@ -46,8 +46,8 @@
 
   <section id="education">
     <h2>{{ t.educationTitle }}</h2>
-    <p><strong>2022 – Aktualnie:</strong> {{ t.education1 }}</p>
-    <p><strong>2019 – 2022:</strong> {{ t.education2 }}</p>
+    <p data-ng-bind-html="t.education1"></p>
+    <p data-ng-bind-html="t.education2"></p>
   </section>
 
   <section id="expirience">
@@ -58,10 +58,10 @@
   <section id="skills">
     <h2>{{ t.skillsTitle }}</h2>
     <ul>
-      <li>{{ t.skill1 }}</li>
-      <li>{{ t.skill2 }}</li>
-      <li>{{ t.skill3 }}</li>
-      <li>{{ t.skill4 }}</li>
+      <li data-ng-bind-html="t.skill1"></li>
+      <li data-ng-bind-html="t.skill2"></li>
+      <li data-ng-bind-html="t.skill3"></li>
+      <li data-ng-bind-html="t.skill4"></li>
       <li>{{ t.skill5 }}</li>
     </ul>
   </section>
